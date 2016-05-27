@@ -1,6 +1,6 @@
 # Bitfusion Mobile Image Manipulation Service API
 
-This AMI comes pre-installed with a simple REST API allowing for complex image transformation tasks. Achieve optimal performance by using this AMI on any AWS instance that fits your needs the best. Minimize resource and power consuption on your mobile devices and thin clients by using the RESTful API.
+This AMI comes pre-installed with a simple REST API allowing for complex image transformation tasks. Achieve optimal performance by using this AMI on any AWS instance that fits your needs the best. Minimize resource and power consumption on your mobile devices and thin clients by using the RESTful API.
 
 
 ## API
