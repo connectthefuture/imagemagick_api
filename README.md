@@ -29,7 +29,7 @@ header 'X-Auth-Token' and have it set to the instance ID for any of the calls to
 
 | task          | option values               | url example:                     |im example command:                                               |
 |-------------- |-----------------------------|----------------------------------|------------------------------------------------------------------|
-| output_f      | [jpg,png,tiff,gif,pdf]      | /output_f=tiff/image.png         | convert input_file output_file.output_f                          |
+| output_file   | [jpg,png,tiff,gif,pdf]      | /output_f=tiff/image.png         | convert input_file output_file.output_f                          |
 | resize_percent| pos integer                 | /resize_percent=110/image.png    | convert input_file -resize integer% output_file                  |
 | resize_x      | pos integer                 | /resize_x=20/image.png           | convert input_file -resize integer output_file                   |
 | resize_y      | pos integer                 | /resize_y=20/image.png           | convert input_file -resize xinteger output_file                  |
