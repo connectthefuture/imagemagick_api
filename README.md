@@ -1,9 +1,7 @@
-# Bitfusion ImageMagick AMI with Rest API
+# Bitfusion Mobile Image Manipulation Service API
 
-This Ubuntu 14 AMI comes pre-installed with Nvidia Drivers, Cuda 7.5 Toolkit, and ImageMagick 7.
+This AMI comes pre-installed with a simple REST API allowing for complex image transforamtion tasks. Achieve optimal perforamnces by using this AMI on an AWS instance type that fits your needs best, while minimzing resource and power consuption on your mobile devices / think clients.  
 
-
-Achieve orders of magnitude faster transforms while saving battery power.
 
 ## API
 
