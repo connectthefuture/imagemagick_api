@@ -74,7 +74,7 @@ http://${host_ip}:5000/input/
 
 # Expected output:
 # {
-#     "filename": "house.jpb",
+#     "filename": "house.jpg",
 #     "status": "success"
 # }
 
@@ -82,8 +82,6 @@ http://${host_ip}:5000/input/
 #### Step 2 - Transform the file
 ```
 #!/usr/bin/env bash
-
-# http call: http://<ec2 instance IP>/border_color=#1e1e1e/border=10/image.png
 
 token="12345"
 host_ip="52.87.180.179"
@@ -100,6 +98,9 @@ curl -O -X GET \
     "http://${host}:5000/job/$[task1}/${task2}/${task3}/${file}"
     
 ```  
+
+ * Note 1: If you run the post and get in the same directory where the original file is located you will overwrite the original file
+ * Note 2: Subsequent calls on the same file-name are not cummulative. That is, the transformation always starts with the originally uploaded image. If you want to execute multiple transformations on the same image, make them all part of the same command.
 
 ### Postman
 
