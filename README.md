@@ -84,13 +84,18 @@ http://${host_ip}:5000/input/
 token="12345"
 host_ip="52.87.180.179"
 file="house.jpg"
+file_head=$( echo $f{file} | cut -d '.' -f1)
+file_tail=$( echo $f{file} | cut -d '.' -f1)
+
+output_file=${file_head}-out.${file_tail}
 
 # Image Transform Tasks
 task1='border_color=4321e1'
 task2='border=20'
 task3='rotate=2'
 
-curl -O -X GET \
+curl -o ${output_file} \
+    -X GET \
     -H "X-Auth-Token: ${token}" \
     -H "Cache-Control: no-cache" \
     "http://${host}:5000/job/$[task1}/${task2}/${task3}/${file}"
