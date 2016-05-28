@@ -111,6 +111,7 @@ curl -o ${output_file} \
 We created some sample calls via Postman.  You will need to update an environment and add the url and token variable where:
  * url = {ec2 instance ip:5000}
  * token = {ec2 instance id}
+ * file = {name of file you upload}
  
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f5d064950c0b48ebb562#?env%5Baws%5D=W3sia2V5IjoidG9rZW4iLCJ2YWx1ZSI6ImktNDg2NDk5ZDQiLCJ0eXBlIjoidGV4dCIsImVuYWJsZWQiOnRydWUsImhvdmVyZWQiOmZhbHNlfSx7ImtleSI6InVybCIsInZhbHVlIjoiNTQuMjM1LjIyNi4yMzI6NTAwMCIsInR5cGUiOiJ0ZXh0IiwiZW5hYmxlZCI6dHJ1ZSwiaG92ZXJlZCI6ZmFsc2V9LHsia2V5IjoidGFza19pZCIsInR5cGUiOiJ0ZXh0IiwidmFsdWUiOiIzNzliYTY1Ny0yYmE5LTRkZWMtOTQ4ZS03YmVhMDhiNWExNGEiLCJlbmFibGVkIjp0cnVlLCJob3ZlcmVkIjpmYWxzZX0seyJrZXkiOiJvdXRwdXRfZmlsZSIsInR5cGUiOiJ0ZXh0IiwidmFsdWUiOiJCTVcyNy1kYWIxYTM5ZC01OWNkLTRkN2QtYjRhZi1jYjEwMDcyZGIyNjctMDEucG5nIiwiZW5hYmxlZCI6dHJ1ZSwiaG92ZXJlZCI6ZmFsc2V9XQ==)
 
