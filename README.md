@@ -100,7 +100,7 @@ curl -o ${output_file} \
     -H "X-Auth-Token: ${token}" \
     -H "Cache-Control: no-cache" \
     "http://${host_ip}:5000/job/${task1}/${task2}/${task3}/${file}"
-~                                                                      
+                                                            
     
 ```  
 
