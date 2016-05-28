@@ -102,7 +102,7 @@ curl -o ${output_file} \
     
 ```  
 
- * Note 1: If you run the post and get in the same directory where the original file is located you will overwrite the original file
+ * Note 1: By default the file returned will have the same filename.  In the example provided above we specically add "-out" to the filename. 
  * Note 2: Subsequent calls on the same file-name are not cummulative. That is, the transformation always starts with the originally uploaded image. If you want to execute multiple transformations on the same image, make them all part of the same command.
  * Note 3: When multiple transformations are specified, they are executed in the order in which they were specified in the request.
 
