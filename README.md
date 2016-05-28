@@ -108,7 +108,7 @@ curl -o ${output_file} \
 
 ### Postman
 
-We created some sample calls via Postman.  You will need to update an environment and add the url and token variable where:
+We created some sample calls via Postman.  You will need to update an environment and add the url, token, and file variable where:
  * url = {ec2 instance ip:5000}
  * token = {ec2 instance id}
  * file = {name of file you upload}
