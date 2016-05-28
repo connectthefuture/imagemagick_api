@@ -33,7 +33,7 @@ header 'X-Auth-Token' and have it set to the instance ID for any of the calls to
 | resize_percent| pos integer                 | /resize_percent=110/image.png    | convert input_file -resize integer% output_file                  |
 | resize_x      | pos integer                 | /resize_x=20/image.png           | convert input_file -resize integer output_file                   |
 | resize_y      | pos integer                 | /resize_y=20/image.png           | convert input_file -resize xinteger output_file                  |
-| resize_xy     | pos integer1, pos integer2  | /resize_xy=100,100/image.png     | convert input_file -resize integer1xinteger2! output_file        |
+| resize_xy     | pos integer1, pos integer2  | /resize_xy=100,100/image.png     | convert input_file -resize integer1xinteger2 output_file        |
 | rotate        | pos or neg float            | /rotate=-270/image.png           | convert input_file -rotate integer1 output_file                  |
 | charcoal      | pos integer                 | /charcoal=10/image.png           | convert input_file -charcoal integer1 output_file                |
 | negate        |                             | /negate/image.png                | convert input_file -negate                                       |
