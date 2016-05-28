@@ -81,13 +81,14 @@ http://${host_ip}:5000/input/
 ```
 #!/usr/bin/env bash
 
-token="12345"
-host_ip="52.87.180.179"
-file="house.jpg"
-file_head=$( echo $f{file} | cut -d '.' -f1)
-file_tail=$( echo $f{file} | cut -d '.' -f1)
+token="<ec2 instance id>"
+host_ip="<ec2 instance public IP>"
+file="dubai_skyscraper.jpg"
+file_head=$( echo ${file} | cut -d '.' -f1)
+file_tail=$( echo ${file} | cut -d '.' -f2)
 
 output_file=${file_head}-out.${file_tail}
+echo "Output File: $output_file"
 
 # Image Transform Tasks
 task1='border_color=4321e1'
@@ -98,7 +99,8 @@ curl -o ${output_file} \
     -X GET \
     -H "X-Auth-Token: ${token}" \
     -H "Cache-Control: no-cache" \
-    "http://${host}:5000/job/$[task1}/${task2}/${task3}/${file}"
+    "http://${host_ip}:5000/job/${task1}/${task2}/${task3}/${file}"
+~                                                                      
     
 ```  
 
